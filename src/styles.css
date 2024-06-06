@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+body, html {
+   margin: 0 !important;
+}
+
+@font-face {
+   font-family: 'Righteous';
+   src: url('assets/fonts/Righteous-Regular.ttf') format(truetype);
+  
+   font-weight: normal;
+   font-style: normal;
+}
+
+html {
+   font-family: 'Righteous';
+   letter-spacing: 2px
+}

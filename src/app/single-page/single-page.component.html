@@ -1,0 +1,16 @@
+<div class="main">
+      <button class="back-button" routerLink="/">Volver</button>
+   
+   <div class="main_title">
+      <h1>{{photoAlbum.title}}</h1>
+   </div>
+   <div class="main_empty-container"></div>
+   <div class="main_photos">
+      @for (element of [].constructor(photosLength); track element; let i = $index) {
+         <div class="main_photos_div">
+            <img [src]="photoAlbum.url + '/' + photoAlbum.slur + '-' + i + '.jpg'" [alt]="photoAlbum.title" />
+         </div>
+      }
+   </div>
+</div>
+
